@@ -16,6 +16,11 @@ const NASA_API_KEY = process.env.NASA_API_KEY;
 // NASA API endpoint for APOD (Astronomy Picture of the Day)
 const NASA_APOD_URL = 'https://api.nasa.gov/planetary/apod';
 
+// Route for the root URL (Welcome page)
+app.get('/', (req, res) => {
+  res.send('Welcome to APOD Server!');
+});
+
 // Route for APOD (Astronomy Picture of the Day)
 app.get('/api/apod', async (req, res) => {
   try {
