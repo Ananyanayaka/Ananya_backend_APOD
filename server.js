@@ -1,13 +1,11 @@
 
-// server.js
-
 const express = require('express');
 const axios = require('axios');
 const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
-const port = process.env.PORT || 5000; // Heroku will provide the correct port
+const port = process.env.PORT || 4000; // Heroku will provide the correct port
 
 // Middleware
 app.use(cors());
